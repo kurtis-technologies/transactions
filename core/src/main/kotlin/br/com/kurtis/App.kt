@@ -1,11 +1,11 @@
 package br.com.kurtis
 
-import org.apache.logging.log4j.LogManager
+import mu.KotlinLogging
 
 class App
 
-private val log = LogManager.getLogger(App::class.java)
+private val log = KotlinLogging.logger {}
 
 fun main() {
-    log.info("Hello World!")
+    log.info { "Hello World!" }
 }
